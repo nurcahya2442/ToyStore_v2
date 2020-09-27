@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:background="@drawable/bg_shape_top">
+
+        <ImageView
+            android:id="@+id/imageCat"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:src="@drawable/example"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_40sdp">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tvNamaCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yuq"
+            android:textSize="@dimen/_25ssp"
+            android:textColor="#FFFF"
+            android:layout_below="@id/imageCat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvJenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anggora"
+            android:textColor="#FFFF"
+            android:textSize="@dimen/_18ssp"
+            android:layout_below="@id/tvNamaCat"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tvBerat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berat"
+            android:layout_below="@id/tvJenis"
+            android:textColor="#FFFF"
+            android:textSize="@dimen/_22ssp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_30sdp"/>
+
+        <TextView
+            android:id="@+id/tvBeratUcink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="46 kg"
+            android:textColor="#FFF"
+            android:textSize="@dimen/_18ssp"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:layout_below="@id/tvBerat" />
+
+        <TextView
+            android:id="@+id/tvTinggi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tinggi"
+            android:textColor="#FFF"
+            android:textSize="@dimen/_22ssp"
+            android:textStyle="bold"
+            android:layout_below="@id/tvJenis"
+            android:layout_toRightOf="@id/tvBerat"
+            android:layout_marginLeft="@dimen/_135sdp"/>
+
+        <TextView
+            android:id="@+id/tvTinggiUcink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="159 cm"
+            android:textColor="#FFF"
+            android:textSize="@dimen/_18ssp"
+            android:layout_below="@id/tvTinggi"
+            android:layout_alignRight="@id/tvTinggi"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_below="@id/relative1"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="49dp"
+        android:layout_marginRight="@dimen/_10sdp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/tvNextReminder"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Next Reminder"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/tvAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Add"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvReminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_100sdp"
+                android:text="Reminder"
+                android:textSize="@dimen/_14ssp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_below="@id/card1"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/tvFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Food"
+                android:textSize="@dimen/_15ssp" />
+
+            <RelativeLayout
+                android:id="@+id/relativeCardIjo"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_55sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="#DCAE39">
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvFoodMorning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_60sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Morning"
+                android:textColor="#373535"
+                android:textSize="@dimen/_12ssp" />
+
+            <RelativeLayout
+                android:id="@+id/relativeCardBilu"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_115sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="#4BEDF3">
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tvFoodAfternoon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_115sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Afternoon"
+                android:textColor="#373535"
+                android:textSize="@dimen/_12ssp" />
+
+            <RelativeLayout
+                android:id="@+id/relativeCardDark"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_175sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="#184067">
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvFoodNight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_185sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Night"
+                android:textColor="#373535"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tvBtnShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shop"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginLeft="@dimen/_230sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_below="@id/card2"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_10sdp">
+            
+            <TextView
+                android:id="@+id/tvRawat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cara Merawat Kucing"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_14ssp"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

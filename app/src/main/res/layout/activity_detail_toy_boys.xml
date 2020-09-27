@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#6EB5FF">
+
+    <RelativeLayout
+        android:id="@id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_475sdp"
+        android:background="@drawable/bg_shape_below">
+
+        <ImageView
+            android:id="@+id/btnBack_detailToy_boy"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_back"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp" />
+
+        <ImageView
+            android:id="@+id/imgDetail_toys_boys"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:src="@drawable/bear"
+            android:layout_below="@id/tvDetail_price_boys"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tvDetail_ToyName_boy"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnBack_detailToy_boy"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Fluffy Teddy Bear Pink"
+            android:textColor="#323131"
+            android:textSize="@dimen/_23ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDetail_Decs_boy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDetail_ToyName_boy"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Ini tedy bear lucu imut tiada tara pokonya"
+            android:fontFamily="@font/nunito_light"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#4C4B4B"/>
+
+        <ImageView
+            android:id="@+id/imgBtn_fav"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_fav"
+            android:layout_below="@id/btnBack_detailToy_boy"
+            android:layout_toRightOf="@id/tvDetail_ToyName_boy"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_65sdp"/>
+
+        <!--        <com.airbnb.lottie.LottieAnimationView-->
+        <!--            android:layout_width="80dp"-->
+        <!--            android:layout_height="80dp"-->
+        <!--            android:layout_below="@id/btnBack"-->
+        <!--            android:layout_toRightOf="@id/tvDetail_ToyName"-->
+        <!--            android:layout_marginLeft="@dimen/_65sdp"-->
+        <!--            android:layout_marginTop="@dimen/_20sdp"-->
+        <!--            app:lottie_rawRes="@raw/mheartfav"-->
+        <!--            app:lottie_autoPlay="true"-->
+        <!--            app:lottie_loop="true"-->
+        <!--            android:scaleType="centerInside"/>-->
+
+        <TextView
+            android:id="@+id/tvDetail_price_boys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. 150.000"
+            android:layout_below="@id/tvDetail_Decs_boy"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textSize="@dimen/_16ssp"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="#454444"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative1">
+
+        <TextView
+            android:id="@+id/tvHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textSize="@dimen/_17ssp"
+            android:textColor="#fff"
+            android:fontFamily="@font/nunito_extrabold"/>
+
+        <TextView
+            android:id="@+id/tvTinggi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 meter"
+            android:layout_below="@id/tvHeight"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#fff"
+            android:fontFamily="@font/nunito"/>
+
+        <TextView
+            android:id="@+id/tvWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_toRightOf="@id/tvHeight"
+            android:textSize="@dimen/_17ssp"
+            android:textColor="#fff"
+            android:fontFamily="@font/nunito_extrabold"/>
+
+        <TextView
+            android:id="@+id/tvBerat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Kg"
+            android:layout_below="@id/tvHeight"
+            android:layout_marginLeft="@dimen/_70sdp"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#fff"
+            android:fontFamily="@font/nunito"
+            android:layout_toRightOf="@id/tvTinggi"/>
+
+        <TextView
+            android:id="@+id/tvMaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Material"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_toRightOf="@id/tvWeight"
+            android:textSize="@dimen/_17ssp"
+            android:textColor="#fff"
+            android:fontFamily="@font/nunito_extrabold"/>
+
+        <TextView
+            android:id="@+id/tvBahan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rasfur"
+            android:layout_below="@id/tvHeight"
+            android:layout_marginLeft="@dimen/_65sdp"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#fff"
+            android:fontFamily="@font/nunito"
+            android:layout_toRightOf="@id/tvBerat"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Intro.onBoarding1"
+    android:background="#fff">
+
+        <ImageView
+            android:id="@+id/ivOnboard2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/onboarding_cell2" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imgGif_heart"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        app:lottie_rawRes="@raw/mheartfav"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_160sdp"
+        android:layout_marginLeft="@dimen/_20sdp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imgGif_robot"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        app:lottie_rawRes="@raw/mtalkingrobot"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:scaleType="centerInside"
+        android:layout_marginTop="@dimen/_370sdp"
+        android:layout_marginLeft="@dimen/_25sdp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imgGif_bear"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        app:lottie_rawRes="@raw/mteddybear"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:scaleType="centerInside"
+        android:layout_marginTop="@dimen/_390sdp"
+        android:layout_toRightOf="@id/imgGif_robot"
+        android:layout_marginLeft="@dimen/_110sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cari Mainan Kesukaan Anak Anda"
+        android:fontFamily="@font/nunito_extrabold"
+        android:textColor="#fff"
+        android:textSize="@dimen/_25ssp"
+        android:layout_below="@id/imgGif_robot"
+        android:gravity="center"/>
+
+
+
+
+</RelativeLayout>
